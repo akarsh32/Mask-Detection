@@ -1,3 +1,4 @@
+gunicorn==19.0.0
 absl-py==0.7.1
 aiohttp==3.5.4
 aiohttp-cors==0.7.0
