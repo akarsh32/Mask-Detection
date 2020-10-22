@@ -1,10 +1,8 @@
-import argparse
-
 from flask import Flask, render_template, Response
 
 from face_recognition import MaskDetection
 
-# initialize the mask detector and the total number of frames
+# initialize the mask detector
 md = MaskDetection()
 app = Flask(__name__)
 
