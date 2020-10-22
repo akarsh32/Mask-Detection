@@ -27,11 +27,5 @@ def video_feed():
 
 
 if __name__ == '__main__':
-    # construct the argument parser and parse command line arguments
-    ap = argparse.ArgumentParser()
-    ap.add_argument("-i", "--ip", type=str, default="127.0.0.1", help="ip address of the device")
-    ap.add_argument("-o", "--port", type=int, default=5000, help="ephemeral port number of the server (1024 to 65535)")
-    args = vars(ap.parse_args())
-
     # start the flask app
-    app.run(host=args["ip"], port=args["port"], debug=True, threaded=True, use_reloader=False)
+    app.run(debug=True, threaded=True, use_reloader=False)
